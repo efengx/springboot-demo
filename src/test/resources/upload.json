@@ -1,0 +1,81 @@
+[
+  {
+    "type": "GET",
+    "value": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+  },
+  {
+    "type": "CLICK",
+    "value": "",
+    "element": {
+      "friendlyName": "",
+      "type": "INPUT",
+      "idPath1": "//input[@id\u003d\u0027username\u0027]",
+      "cssPath1": "//td[@class\u003d\u0027input_pad\u0027]/form/input[7]",
+      "dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[7]",
+      "page": {
+        "pageTitle": "Welcome to Maximo",
+        "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+      }
+    }
+  },
+  {
+    "type": "INPUT",
+    "value": "cantor",
+    "element": {
+      "friendlyName": "cantor",
+      "type": "INPUT",
+      "idPath1": "//input[@id\u003d\u0027username\u0027]",
+      "cssPath1": "//td[@class\u003d\u0027input_pad\u0027]/form/input[7]",
+      "dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[7]",
+      "page": {
+        "pageTitle": "Welcome to Maximo",
+        "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+      }
+    }
+  },
+  {
+    "type": "CLICK",
+    "value": "",
+    "element": {
+      "friendlyName": "",
+      "type": "INPUT",
+      "idPath1": "//input[@id\u003d\u0027password\u0027]",
+      "cssPath1": "//td[@class\u003d\u0027input_pad\u0027]/form/input[12]",
+      "dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[12]",
+      "page": {
+        "pageTitle": "Welcome to Maximo",
+        "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+      }
+    }
+  },
+  {
+    "type": "INPUT",
+    "value": "password",
+    "element": {
+      "friendlyName": "password",
+      "type": "INPUT",
+      "idPath1": "//input[@id\u003d\u0027password\u0027]",
+      "cssPath1": "//td[@class\u003d\u0027input_pad\u0027]/form/input[12]",
+      "dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[12]",
+      "page": {
+        "pageTitle": "Welcometo Maximo",
+        "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+      }
+    }
+  },
+  {
+    "type": "CLICK",
+    "value": "Sign In",
+    "element": {
+      "friendlyName": "Sign In",
+      "type": "BUTTON",
+      "idPath1": "//button[@id\u003d\u0027loginbutton\u0027]",
+      "cssPath1": "//button[@class\u003d\u0027tiv_btn\u0027]",
+      "dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/div[15]/button",
+      "page": {
+        "pageTitle": "Welcome to Maximo",
+        "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+      }
+    }
+  }
+]

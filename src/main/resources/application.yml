@@ -1,0 +1,12 @@
+server:
+  port: 9080
+
+management:
+  server:
+    port: 9081
+
+spring:
+  application:
+    name: kdmax-cloud
+  profiles:
+    active: db, hystrix

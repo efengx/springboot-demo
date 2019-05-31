@@ -1,0 +1,19 @@
+{
+  "testdatas": [
+    {
+      "propertyName": "name",
+      "tagName": "dev",
+      "propertyValue": "testone1"
+    },
+    {
+      "propertyName": "value",
+      "tagName": "dev",
+      "propertyValue": "testtwo2"
+    },
+    {
+      "propertyName": "post",
+      "tagName": "dev",
+      "propertyValue": "testthree3"
+    }
+  ]
+}

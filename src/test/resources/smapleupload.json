@@ -1,0 +1,188 @@
+{
+	"childObj": [{
+		"testaction": {
+			"type": "GET"
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "",
+				"type": "INPUT",
+				"idPath1": "//input[@id='username']",
+				"cssPath1": "//td[@class='input_pad']/form/input[7]",
+				"dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[7]",
+				"page": {
+					"pageTitle": "Welcome to Maximo",
+					"pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"actiondata": {
+				"type": "fixed",
+				"value": "cantor"
+			},
+			"type": "INPUT",
+			"element": {
+				"friendlyName": "cantor",
+				"type": "INPUT",
+				"idPath1": "//input[@id='username']",
+				"cssPath1": "//td[@class='input_pad']/form/input[7]",
+				"dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[7]",
+				"page": {
+					"pageTitle": "Welcome to Maximo",
+					"pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "",
+				"type": "INPUT",
+				"idPath1": "//input[@id='password']",
+				"cssPath1": "//td[@class='input_pad']/form/input[12]",
+				"dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[12]",
+				"page": {
+					"pageTitle": "Welcome to Maximo",
+					"pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"actiondata": {
+				"type": "fixed",
+				"value": "password"
+			},
+			"type": "INPUT",
+			"element": {
+				"friendlyName": "password",
+				"type": "INPUT",
+				"idPath1": "//input[@id='password']",
+				"cssPath1": "//td[@class='input_pad']/form/input[12]",
+				"dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/input[12]",
+				"page": {
+					"pageTitle": "Welcome to Maximo",
+					"pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "Sign In",
+				"type": "BUTTON",
+				"idPath1": "//button[@id='loginbutton']",
+				"cssPath1": "//button[@class='tiv_btn']",
+				"dom1": "/html/body/div/table/tbody/tr[1]/td/table[1]/tbody/tr[1]/td[1]/form/div[15]/button",
+				"page": {
+					"pageTitle": "Welcome to Maximo",
+					"pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "\n                                    \n                             ",
+				"type": "BUTTON",
+				"idPath1": "//button[@id='titlebar-tb_gotoButton']",
+				"cssPath1": "//button[@class='gotobutton gotobuttonhover']",
+				"dom1": "/html/body/form/table[4]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/button[1]",
+				"page": {
+					"pageTitle": "StartCenter",
+					"pageUrl": "http://184.68.122.34:9082/maximo/ui/login"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "Work Orders   ?",
+				"type": "A",
+				"idPath1": "//a[@id='menu0_WO_MODULE_a']",
+				"cssPath1": "//li[@class='submenu current']/a",
+				"dom1": "/html/body/form/table[1]/tbody/tr/td/ul/li[29]/a",
+				"page": {
+					"pageTitle": "Start Center",
+					"pageUrl": "http://184.68.122.34:9082/maximo/ui/login"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "Work Order Tracking",
+				"type": "A",
+				"idPath1": "//a[@id='menu0_WO_MODULE_sub_changeapp_WOTRACK_a']",
+				"cssPath1": "//li[@class='submenu current']/ul[1]/li/a",
+				"dom1": "/html/body/form/table[1]/tbody/tr/td/ul/li[29]/ul[1]/li/a",
+				"page": {
+					"pageTitle": "Start Center",
+					"pageUrl": "http://184.68.122.34:9082/maximo/ui/login"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "New Work Order",
+				"type": "SPAN",
+				"idPath1": "//span[@id='md86fe08f_ns_menu_INSERT_OPTION_a_tnode']",
+				"cssPath1": "//li[@class='current']/a/span[1]",
+				"dom1": "/html/body/form/table[4]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td/div/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/div[1]/div[1]/div[2]/div[1]/div/ul/li/a/span[1]",
+				"page": {
+					"pageTitle": "Work Order Tracking",
+					"pageUrl": "http://184.68.122.34:9082/maximo/ui/?event=loadapp&value=wotrack&uisessionid=335&csrftoken=p8dsu7ltnvboa79f2kmnos2cbe"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"type": "CLICK",
+			"element": {
+				"friendlyName": "",
+				"type": "INPUT",
+				"idPath1": "//input[@id='mad3161b5-tb2']",
+				"cssPath1": "//input[@class='fld text ffAS']",
+				"dom1": "/html/body/form/table[4]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td/div/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td[2]/div/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr[1]/td/input[3]",
+				"page": {
+					"pageTitle": "Work Order Tracking",
+					"pageUrl": "http://184.68.122.34:9082/maximo/ui/?event=loadapp&value=wotrack&uisessionid=335&csrftoken=p8dsu7ltnvboa79f2kmnos2cbe"
+				}
+			}
+		}
+	}, {
+		"testaction": {
+			"actiondata": {
+				"type": "fixed",
+				"value": "555"
+			},
+			"type": "INPUT",
+			"element": {
+				"friendlyName": "555",
+				"type": "INPUT",
+				"idPath1": "//input[@id='mad3161b5-tb2']",
+				"cssPath1": "//input[@class='fld text ffAS']",
+				"dom1": "/html/body/form/table[4]/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[2]/td/div/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr/td[2]/div/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr/td/div/table/tbody/tr[2]/td/table/tbody/tr/td/div/table/tbody/tr/td/div/table/tbody/tr/td/table/tbody/tr[1]/td/input[3]",
+				"page": {
+					"pageTitle": "Work Order Tracking",
+					"pageUrl": "http://184.68.122.34:9082/maximo/ui/?event=loadapp&value=wotrack&uisessionid=335&csrftoken=p8dsu7ltnvboa79f2kmnos2cbe"
+				}
+			}
+		}
+	}, {
+		"testcase": {
+			"id": 5
+		}
+	}]
+}

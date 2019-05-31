@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.99.100:30166/aft</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibBlock"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibBlockcontent"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibBlockdata"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibBlockparameter"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibBlockparamvalue"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibPage"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ComplibResultBlockcontent"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Componentdetail"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Componentmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Configrunmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.EventMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.EventParameter"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ExecutionDetails"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ExecutionMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ExecutionRunmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ExecutionStepDetails"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ExecutionTestDetails"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.NamesDetail"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ObjectMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ObjectRepository"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Objecttype"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ProjectMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.ProjectUserrelationship"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Runmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Scenario"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Scenariorunmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.SelectedProject"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Steprunmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.SuiteDetails"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.SuiteMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.SuiteTestcase"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Testcase"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.TestcaseDetail"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.TestcaseMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Testcasecontent"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Testcasecontentrun"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Testcaserunmaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Testdata"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Testdatarun"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.UserMaster"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Variable"/>
+        <mapping class="com.kdmax.kdmaxcloud.aft.entity.Itemmaster"/>
+    </session-factory>
+</hibernate-configuration>

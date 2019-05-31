@@ -1,0 +1,53 @@
+{
+  "childObj": [
+    {
+      "testaction": {
+        "value": "testaction_22_55",
+        "type": 0,
+        "sorting": 1,
+        "actiondata": {
+          "type": "fixed",
+          "value": "test_value"
+        },
+        "element": {
+          "type": "BUTTON",
+          "idPath1": "Test2_2_3_4",
+          "idPath2": "Test2_2_4",
+          "cssPath1": "Test_2_2_4",
+          "page": {
+            "pageTitle": "Welcome to Maximo",
+            "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+          }
+        }
+      }
+    },
+    {
+      "testaction": {
+        "value": "testaction_22_66",
+        "type": 0,
+        "sorting": 1,
+        "actiondata": {
+          "type": "testdata",
+          "projectName": "name"
+        },
+        "element": {
+          "type": "BUTTON",
+          "idPath1": "Test2_2_3_4",
+          "idPath2": "Test2_2_4",
+          "cssPath1": "Test_2_2_4",
+          "page": {
+            "pageTitle": "Welcome to Maximo",
+            "pageUrl": "http://184.68.122.34:9082/maximo/webclient/login/login.jsp"
+          }
+        }
+      }
+    },
+    {
+      "testcase": {
+        "id": "3",
+        "name": "testcase_33_55",
+        "sorting": 2
+      }
+    }
+  ]
+}
