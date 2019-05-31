@@ -156,4 +156,5 @@ if(a!=null){
 Optinal.ofNullable(a).map(v->v.prop1).map(v->v.prop2).orElse(10)
 ```
 
-https://github.com/spring-projects/spring-data-examples/tree/master/jpa/jpa21#support-for-custom-sqlresultsetmapping-with-constructorresult
+## 参考资料
+[spring data jpa](https://github.com/spring-projects/spring-data-examples/tree/master/jpa/jpa21#support-for-custom-sqlresultsetmapping-with-constructorresult)
