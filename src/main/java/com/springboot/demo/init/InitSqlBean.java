@@ -4,8 +4,6 @@ import com.springboot.demo.entity.ProjectMaster;
 import com.springboot.demo.entity.Scenario;
 import com.springboot.demo.repo.ProjectMasterRepo;
 import com.springboot.demo.repo.ScenarioRepo;
-import com.springboot.demo.security.entity.UserMaster;
-import com.springboot.demo.security.repo.UserMasterRepo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,48 +19,18 @@ public class InitSqlBean implements CommandLineRunner {
     private ProjectMasterRepo projectMasterRepository;
 
     @Autowired
-    private UserMasterRepo userMasterRepository;
-
-    @Autowired
     private ScenarioRepo scenarioRepo;
 
     @Override
     public void run(String... args) {
-        userMasterRepository.findByLanID("s123").orElseGet(() -> {
-            init();
-            return null;
-        });
+//        userMasterRepository.findByLanID("s123").orElseGet(() -> {
+//            init();
+//            return null;
+//        });
     }
 
     private void init() {
         log.info("init");
-        UserMaster adminUser = userMasterRepository.save(
-                UserMaster.builder()
-                        .lanID("s123")
-                        .password("123")
-                        .username("sathik")
-                        .UserType("Admin")
-//                        .projectID(1)
-                        .build()
-        );
-
-        userMasterRepository.saveAll(Arrays.asList(
-                UserMaster.builder()
-                        .lanID("tester")
-                        .password("kditsolutions")
-                        .username("sudipta")
-                        .UserType("Tester")
-                        .email("deb_sudip@hotmail.com")
-                        .build(),
-                UserMaster.builder()
-                        .lanID("sudip")
-                        .password("sd123")
-                        .UserType("sudip")
-                        .UserType("Developer")
-                        .email("deb.sudipta04@gmail.com")
-                        .build()
-        ));
-
         projectMasterRepository.saveAll(Arrays.asList(
                 ProjectMaster.builder()
                     .projectID(18)
@@ -72,12 +40,12 @@ public class InitSqlBean implements CommandLineRunner {
                 ProjectMaster.builder()
                     .projectID(25)
                     .projectName("test")
-                    .lanID(adminUser)
+//                    .lanID(adminUser)
                     .build(),
                 ProjectMaster.builder()
                     .projectID(26)
                     .projectName("4 feb 2019")
-                    .lanID(adminUser)
+//                    .lanID(adminUser)
                     .build()
         ));
 
@@ -85,7 +53,7 @@ public class InitSqlBean implements CommandLineRunner {
                 ProjectMaster.builder()
                         .projectID(23)
                         .projectName("12 JAN 2019")
-                        .lanID(adminUser)
+//                        .lanID(adminUser)
                         .projectSummary("DEMO")
                         .build()
         );

@@ -1,0 +1,43 @@
+image: docker:latest
+
+services:
+- name: docker:dind
+  command: [ "--insecure-registry=10.0.2.15:5000" ]
+
+# 自定义变量
+#variables:
+#  DOCKER_DRIVER: overlay
+#  SPRING_PROFILES_ACTIVE: gitlab-ci
+
+stages:
+  - build
+  - package
+  - deploy
+
+maven-build:
+  image: maven:3-jdk-8
+  stage: build
+  script:
+#  debug 用命令 （mvn命令每次都需要重新download下包，后续需要优化为：使用localhost仓库加速/使用文件挂载直接将localhost仓库挂载到指定目录）
+  - ls -a
+  - mvn package -B
+  - ls -a
+  artifacts:
+    paths:
+    - target/*.jar
+
+docker-build:
+  stage: package
+  script:
+  - docker images
+  - docker ps
+  - docker build -t 10.0.2.15:5000/superman/actuator-sample .
+  - docker push 10.0.2.15:5000/superman/actuator-sample
+
+k8s-deploy:
+  stage: deploy
+  script:
+  - kubectl get pods --all-namespaces
+  - kubectl delete secret registry.gitlab.com
+  - kubectl create secret docker-registry 10.0.2.15:5000 --docker-server=http://10.0.2.15:5000
+  - kubectl apply -f deployment.yml

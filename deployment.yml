@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: springcloud-dev
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: actuator-sample
+  namespace: springcloud-dev
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: actuator-sample
+    spec:
+      containers:
+      - name: actuator-sample
+        image: 10.0.2.15:5000/superman/actuator-sample
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: localhost:5000

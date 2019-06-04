@@ -21,10 +21,10 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 @EqualsAndHashCode(
-		exclude = {"scenarioID", "testcaseContentSet"}
+		exclude = {"testcaseContentSet"}
 )
 @ToString(
-		exclude = {"scenarioID", "testcaseContentSet"}
+		exclude = {"testcaseContentSet"}
 )
 public class Testcase {
 

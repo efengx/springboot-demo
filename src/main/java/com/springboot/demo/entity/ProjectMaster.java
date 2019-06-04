@@ -4,7 +4,6 @@ import java.util.Set;
 
 import javax.persistence.*;
 
-import com.springboot.demo.security.entity.UserMaster;
 import lombok.*;
 
 
@@ -18,10 +17,10 @@ import lombok.*;
 @AllArgsConstructor
 @Table(name = "project_master")
 @EqualsAndHashCode(
-		exclude = {"lanID", "scenarioSet", "testcaseMasterSet", "componentMasterSet", "objectRepositorySet"}
+		exclude = {"scenarioSet", "testcaseMasterSet", "componentMasterSet", "objectRepositorySet"}
 )
 @ToString(
-		exclude = {"lanID", "scenarioSet", "testcaseMasterSet", "componentMasterSet", "objectRepositorySet"}
+		exclude = { "scenarioSet", "testcaseMasterSet", "componentMasterSet", "objectRepositorySet"}
 )
 public class ProjectMaster {
 
@@ -30,10 +29,6 @@ public class ProjectMaster {
 	private Integer projectID;
 
 	private String projectName;
-
-	@ManyToOne
-	@JoinColumn(name = "Lan_ID")
-	private UserMaster lanID;
 
 	private String projectSummary;
 

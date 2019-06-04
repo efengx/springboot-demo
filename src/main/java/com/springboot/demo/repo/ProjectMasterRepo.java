@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ProjectMasterRepo extends JpaRepository<ProjectMaster, Integer> {
 
-    List<ProjectMaster> findByLanIDLanID(@Param("lanID") String lanID);
+//    List<ProjectMaster> findByLanIDLanID(@Param("lanID") String lanID);
 
 }
